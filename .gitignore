@@ -1,0 +1,17 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore TrebEdit backups (if any)
+*.bak
+*.swp
+
+# Ignore log files
+*.log
+
+# Ignore node_modules if you ever use a package manager
+node_modules/
+npm-debug.log
+
+# Ignore environment variables (if used in the future)
+.env
