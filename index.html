@@ -7,28 +7,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="stars"></div> <!-- Starry background -->
-    <div class="asteroid"></div> <!-- Asteroid animation -->
-    <div class="cursor"></div> <!-- Circle Cursor -->
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section class="intro">
-        <h1><span class="hello">Hello World!</span><br>It's <span class="name">Dipangshu</span></h1>
+    <div class="stars"></div>
+    <div class="asteroid"></div>
+    <div class="cursor"></div>
+
+    <section id="intro" class="intro">
+        <h1><span class="hello" id="typing-text"></span><br>It's <span class="name">Dipangshu</span></h1>
         <p>Frontend Developer | Student</p>
         <div class="profile-pic">
             <img src="your-profile-image.png" alt="Dipangshu">
         </div>
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
         <h2>About Me</h2>
         <p>I am Dipangshu, a passionate web developer and student, currently exploring new technologies.</p>
         <div class="social-links">
-            <a href="https://github.com/dipangshudhar" target="_blank">🐱 GitHub</a>
-            <a href="https://discord.gg/YrENk2EPkQ" target="_blank">🎮 Discord</a>
+            <a href="https://github.com/dipangshudhar" target="_blank">
+                <img src="github-icon.svg" alt="GitHub"> GitHub
+            </a>
+            <a href="https://discord.gg/YrENk2EPkQ" target="_blank">
+                <img src="discord-icon.svg" alt="Discord"> Discord
+            </a>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <p>© 2025 Dipangshu Dhar. All Rights Reserved.</p>
     </footer>
