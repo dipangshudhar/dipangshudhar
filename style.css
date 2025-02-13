@@ -6,6 +6,13 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     text-align: center;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
@@ -13,7 +20,45 @@ body {
     color: white;
     overflow-x: hidden;
     position: relative;
-    cursor: none; /* Hide default cursor */
+    cursor: none;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Sticky Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar nav ul li {
+    list-style: none;
+}
+
+.navbar nav ul li a {
+    color: #a6e22e; /* Same color as Dipangshu's name */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.navbar nav ul li a:hover {
+    color: white;
+    transform: scale(1.1);
 }
 
 /* Starry Background */
@@ -27,6 +72,7 @@ body {
 
 .intro {
     padding: 50px;
+    margin-top: 60px;
 }
 
 /* Text Styling */
@@ -66,15 +112,47 @@ body {
     text-decoration: none;
     font-size: 18px;
     margin: 10px;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     transition: 0.3s;
+}
+
+.social-links a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    border-radius: 50%;
 }
 
 .social-links a:hover {
     color: #a6e22e;
 }
 
-/* Fade-in and slide-up animation */
+/* Footer Styling */
+footer {
+    width: 100%;
+    padding: 10px 0;
+    background: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+/* Neon Glow Cursor */
+.cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #a6e22e;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 10px #a6e22e, 0 0 20px rgba(166, 226, 46, 0.6);
+    transform: translate(-50%, -50%);
+    transition: transform 0.02s linear;
+}
+
+/* 🚀 Fade-in and Slide-up Animation */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -86,8 +164,8 @@ body {
     }
 }
 
-/* Apply animation to all text elements */
-h1, p, h2, .profile-pic, .social-links {
+/* Apply animation to elements */
+h1, p, h2, .profile-pic, .social-links, .about {
     opacity: 0;
     animation: fadeInUp 1s ease-in-out forwards;
 }
@@ -98,63 +176,4 @@ p { animation-delay: 0.4s; }
 .profile-pic { animation-delay: 0.6s; }
 h2 { animation-delay: 0.8s; }
 .social-links { animation-delay: 1s; }
-
-/* 🚀 Asteroid Falling Animation */
-.asteroid {
-    position: absolute;
-    top: -100px;
-    left: -100px;
-    width: 60px;
-    height: 60px;
-    background: url('asteroid.png') no-repeat center/cover;
-    animation: fall 2s linear forwards, blast 0.5s 2s forwards;
-}
-
-/* Asteroid Falling Motion */
-@keyframes fall {
-    0% {
-        transform: translate(0, 0) rotate(0deg);
-    }
-    100% {
-        transform: translate(100vw, 100vh) rotate(720deg);
-    }
-}
-
-/* 💥 Explosion Effect */
-@keyframes blast {
-    0% {
-        background: url('explosion.png') no-repeat center/cover;
-        transform: scale(1);
-    }
-    100% {
-        background: url('explosion.png') no-repeat center/cover;
-        transform: scale(3);
-        opacity: 0;
-    }
-}
-
-/* 📌 Footer Styling */
-footer {
-    position: relative;
-    width: 100%;
-    padding: 10px 0;
-    background: rgba(255, 255, 255, 0.1);
-    text-align: center;
-    color: white;
-    font-size: 14px;
-    margin-top: 20px;
-    bottom: 0;
-}
-
-/* 🟠 Neon Glow Cursor Effect */
-.cursor {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: rgba(0, 255, 255, 0.8); /* Neon cyan color */
-    border-radius: 50%;
-    pointer-events: none; /* Prevents interaction */
-    transform: translate(-50%, -50%);
-    transition: transform 0.05s ease-out;
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.6), 0 0 30px rgba(0, 255, 255, 0.4);
-}
+.about { animation-delay: 1.2s; }
