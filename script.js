@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const starsContainer = document.querySelector(".stars");
     const cursor = document.querySelector(".cursor");
 
@@ -12,34 +12,39 @@ document.addEventListener("DOMContentLoaded", function() {
         starsContainer.appendChild(star);
     }
 
-    // Remove asteroid after animation
-    setTimeout(() => {
-        let asteroid = document.querySelector(".asteroid");
-        if (asteroid) {
-            asteroid.remove();
-        }
-    }, 2500);
+    // Fix Smooth Cursor Movement for PC and Mobile
+    function moveCursor(x, y) {
+        requestAnimationFrame(() => {
+            cursor.style.left = `${x}px`;
+            cursor.style.top = `${y}px`;
+        });
+    }
 
-    // Move Cursor on Mouse Move (Desktop)
     document.addEventListener("mousemove", (e) => {
-        cursor.style.left = `${e.clientX}px`;
-        cursor.style.top = `${e.clientY}px`;
+        moveCursor(e.clientX, e.clientY);
     });
 
-    // Move Cursor on Tap (Mobile)
     document.addEventListener("touchmove", (e) => {
         let touch = e.touches[0];
-        cursor.style.left = `${touch.clientX}px`;
-        cursor.style.top = `${touch.clientY}px`;
+        moveCursor(touch.clientX, touch.clientY);
     });
 
-    // Show cursor when touching
-    document.addEventListener("touchstart", () => {
-        cursor.style.display = "block";
-    });
+    // Show/hide cursor on touch events
+    document.addEventListener("touchstart", () => cursor.style.display = "block");
+    document.addEventListener("touchend", () => cursor.style.display = "none");
 
-    // Hide cursor when touch ends
-    document.addEventListener("touchend", () => {
-        cursor.style.display = "none";
-    });
+    // ✨ Typing Animation for "Hello World!.."
+    const text = "Hello World!..";
+    let index = 0;
+    const typingElement = document.getElementById("typing-text");
+
+    function typeText() {
+        if (index < text.length) {
+            typingElement.textContent += text.charAt(index);
+            index++;
+            setTimeout(typeText, 220);
+        }
+    }
+    
+    typeText();
 });
