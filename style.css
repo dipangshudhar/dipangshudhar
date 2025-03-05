@@ -1,0 +1,159 @@
+/* General Styles */
+{ margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+
+html, body { background-color: #000; color: #fff; text-align: center; overflow-x: hidden; /* Prevent horizontal scrolling */ scroll-behavior: smooth; }
+
+/* Hide scrollbar but allow scrolling */
+body::-webkit-scrollbar { width: 0; display: none; }
+
+/* Loading Screen */
+.loading-screen { position: fixed; width: 100vw; height: 100vh; background: #000; display: flex; justify-content: center; align-items: center; z-index: 1000; transition: opacity 0.5s ease-out, visibility 0.5s ease-out; }
+
+/* Centered Rotating Star */
+.loading-star { font-size: 4rem; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); animation: spinStar 1s linear infinite; }
+
+/* Star Rotation Animation */
+@keyframes spinStar { 0% { transform: translate(-50%, -50%) rotate(0deg); } 100% { transform: translate(-50%, -50%) rotate(360deg); } }
+
+/* Hide Loader and Enable Scrolling */
+body.loaded { overflow: auto; /* Enable scrolling after loading */ }
+
+.loading-screen.hidden { opacity: 0; visibility: hidden; }
+
+/* Hide Content Initially */
+.main-content { display: none; opacity: 0; transition: opacity 1s ease-in-out; }
+
+/* Fade-in Effect */
+.fade-in { opacity: 0; transform: translateY(30px); transition: opacity 1s ease-out, transform 1s ease-out; }
+
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* Hero Section */
+.hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 2rem; background: linear-gradient(to right, #0f0f0f, #1c1c1c); padding: 20px; }
+
+.hero h1 { font-size: 4rem; background: linear-gradient(45deg, #ff00ff, #00ffff); -webkit-background-clip: text; color: transparent; animation: textGlow 2s infinite alternate; }
+
+@keyframes textGlow { 0% { text-shadow: 0 0 10px #ff00ff; } 100% { text-shadow: 0 0 20px #00ffff; } }
+
+/* Profile Picture Frame */
+.profile-frame { width: 150px; height: 150px; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin: 20px auto; position: relative; animation: frameGlow 2s infinite alternate; }
+
+/* Animated Border */
+.profile-frame::before { content: ""; position: absolute; width: 100%; height: 100%; border-radius: 50%; background: linear-gradient(45deg, #ff00ff, #ff6600, #00ffff); z-index: -1; animation: rotateFrame 3s linear infinite; }
+
+/* Profile Picture */
+.profile-pic { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; }
+
+/* Keyframe Animation for the Frame */
+@keyframes rotateFrame { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+@keyframes frameGlow { 0% { box-shadow: 0 0 10px #ff00ff; } 100% { box-shadow: 0 0 20px #00ffff; } }
+
+/* Sections */
+section { padding: 4rem 2rem; max-width: 800px; margin: auto; border-radius: 10px; }
+
+/* Heading Gradient */
+h2 { font-size: 2rem; margin-bottom: 1rem; background: linear-gradient(90deg, #ff0099, #ff6600); -webkit-background-clip: text; color: transparent; }
+
+/* Paragraphs */
+p { font-size: 1.2rem; opacity: 0.8; }
+
+/* Projects */
+.project { margin-top: 2rem; padding: 1rem; background: rgba(255, 255, 255, 0.1); border-radius: 10px; transition: transform 0.3s ease-in-out, background 0.3s ease-in-out; }
+
+.project:hover { transform: scale(1.05); background: rgba(255, 255, 255, 0.2); }
+
+/* Contact Buttons */
+.buttons { margin-top: 1.5rem; display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; }
+
+.btn { padding: 10px 20px; font-size: 1.2rem; font-weight: bold; text-decoration: none; border-radius: 5px; transition: transform 0.3s ease-in-out, background 0.3s ease-in-out; display: flex; align-items: center; gap: 10px; white-space: nowrap; /* Prevents text wrapping */ }
+
+/* Responsive Button Layout */
+@media (max-width: 480px) { 
+  .buttons { flex-direction: row; /* Keep buttons side by side */ justify-content: center; gap: 10px; /* Reduce gap to fit smaller screens */ }
+  .btn { font-size: 1rem; padding: 8px 15px; }
+}
+
+/* Discord Button */
+.btn.discord { background-color: #5865F2; color: white; }
+
+.btn.discord:hover { background-color: #4752C4; transform: scale(1.1); }
+
+/* GitHub Button */
+.btn.github { background-color: #333; color: white; }
+
+.btn.github:hover { background-color: #222; transform: scale(1.1); }
+
+/* MCPEDL Button */
+.btn.mcpedl { background-color: #28a745; /* Green */ color: white; }
+
+.btn.mcpedl:hover { background-color: #218838; transform: scale(1.1); }
+
+/* Button Icons */
+.btn img { width: 24px; height: 24px; }
+
+/* Footer */
+footer { padding: 1rem; font-size: 0.9rem; opacity: 0.6; }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) { 
+  .hero h1 { font-size: 3rem; }
+  .profile-frame { width: 120px; height: 120px; }
+  .profile-pic { width: 110px; height: 110px; }
+  section { padding: 3rem 1.5rem; }
+  .buttons { flex-wrap: wrap; justify-content: center; } 
+}
+
+@media (max-width: 480px) { 
+  .hero { font-size: 1.5rem; }
+  .hero h1 { font-size: 2.5rem; }
+  .profile-frame { width: 100px; height: 100px; }
+  .profile-pic { width: 90px; height: 90px; }
+  .btn { padding: 8px 15px; font-size: 1rem; } 
+}
+
+/* Coding Languages Section */
+.language-list { 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 20px; 
+  margin-top: 20px; 
+}
+
+.language { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  background: #fff; /* Set white background */
+  padding: 15px; 
+  border-radius: 10px; 
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out; 
+  width: 100px; 
+  text-align: center; 
+  color: #000; /* Change text color to black for contrast */
+}
+
+.language:hover { 
+  transform: scale(1.1); 
+  background: rgba(255, 255, 255, 0.8); /* Slightly transparent on hover */
+}
+
+.language img { 
+  width: 50px; 
+  height: 50px; 
+  margin-bottom: 10px; 
+}
+
+.language p { 
+  font-size: 1rem; 
+  font-weight: bold; 
+  color: #000; /* Ensure text remains visible */
+}
+
+/* Responsive */
+@media (max-width: 480px) { 
+  .language { width: 80px; padding: 10px; }
+  .language img { width: 40px; height: 40px; }
+  .language p { font-size: 0.9rem; } 
+}
