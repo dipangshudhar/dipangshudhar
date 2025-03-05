@@ -1,5 +1,6 @@
 /* General Styles */
-{ margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+{ margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; font-weight; Bold
+ }
 
 html, body { background-color: #000; color: #fff; text-align: center; overflow-x: hidden; /* Prevent horizontal scrolling */ scroll-behavior: smooth; }
 
@@ -149,11 +150,4 @@ footer { padding: 1rem; font-size: 0.9rem; opacity: 0.6; }
   font-size: 1rem; 
   font-weight: bold; 
   color: #000; /* Ensure text remains visible */
-}
-
-/* Responsive */
-@media (max-width: 480px) { 
-  .language { width: 80px; padding: 10px; }
-  .language img { width: 40px; height: 40px; }
-  .language p { font-size: 0.9rem; } 
-}
+         }
