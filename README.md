@@ -59,7 +59,7 @@
 ## ☕ Discord
 <p align="center">
   <a href="https://discord.com/users/1389405866226356385">
-    <img src="https://img.shields.io/badge/Discord-Connect-5865F2?logo=discord&logoColor=white" alt="Discord" />
+    <img src="https://lanyard.cnrad.dev/api/1389405866226356385?theme=dark&hideDiscrim=true&borderRadius=16px" alt="Discord Presence" />
   </a>
 </p>
 
