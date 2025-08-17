@@ -8,7 +8,7 @@
 ## 👨‍💻 About Me
 <p align="center">
   <img
-    src="https://readme-typing-svg.herokuapp.com?size=22&duration=4000&pause=800&color=000000&center=true&vCenter=true&width=650&lines=Hi+%F0%9F%91%8B,+I'm+Dipangshu+Dhar;Passionate+Web+Developer;Building+Modern+Websites;JavaScript,+Node.js,+React,+Python;Clean+Code+%26+UI%2FUX"
+    src="https://readme-typing-svg.herokuapp.com?size=22&duration=4000&pause=800&color=00FFFF&center=true&vCenter=true&width=650&lines=Hi+%F0%9F%91%8B,+I'm+Dipangshu+Dhar;Passionate+Web+Developer;Building+Modern+Websites;JavaScript,+Node.js,+React,+Python;Clean+Code+%26+UI%2FUX"
     alt="Typing intro"
   />
 </p>
