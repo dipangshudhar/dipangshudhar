@@ -34,12 +34,6 @@
 
 ---
 
-## 🚀 Featured Projects
-- [🌐 Portfolio Website](https://github.com/dipangshudhar/portfolio)
-- [🧭 Altisc](https://github.com/dipangshudhar/altisc)
-
----
-
 ## ✨ Stats
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=dipangshudhar&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
