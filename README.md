@@ -26,11 +26,14 @@ Keeping my workflow ultra-minimal, ultra-fast</p>
 
 <div align="center">
 
-### 📊 GitHub Analytics
+<!-- GitHub Stats -->
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=dipangshudhar&show_icons=true&theme=radical)
 
-<img src="https://github-readme-stats.vercel.app/api?username=dipangshudhar&show_icons=true&theme=tokyonight" height="180" />
-<img src="https://streak-stats.demolab.com?user=dipangshudhar&theme=tokyonight" height="180" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dipangshudhar&layout=compact&theme=tokyonight" height="180" />
+<!-- GitHub Streak -->
+![GitHub streak](https://github-readme-streak-stats.herokuapp.com/?user=dipangshudhar&theme=radical)
+
+<!-- Top Languages -->
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dipangshudhar&layout=compact&theme=radical)
 
 </div>
 
