@@ -25,18 +25,33 @@ Keeping my workflow ultra-minimal, ultra-fast</p>
 <p align="center">Coding,Gaming,Debugging systems at 3 AM for no reason & Breaking environments just to fix them cleaner</p>  
 
 <div align="center">
+<h3>🔹 Github Commits 🔹</h3>
+  
+<!-- GitHub Commits -->
+![GitHub commits this year](https://img.shields.io/github/commit-activity/y/dipangshudhar/dipangshudhar?label=Commits%20This%20Year&style=for-the-badge)
+<!-- Github last commits -->
+![GitHub last commit](https://img.shields.io/github/last-commit/dipangshudhar/dipangshudhar?label=Last%20Commit&style=for-the-badge)
 
-<!-- GitHub Stats -->
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=dipangshudhar&show_icons=true&theme=radical)
+<h3>🔹 Top Languages 🔹</h3>
+
+<!-- Github Top Languages -->
+![Top language](https://img.shields.io/github/languages/top/dipangshudhar/dipangshudhar?label=Top%20Language&style=for-the-badge)
+
+<h3>🔹 Stars & Followers 🔹</h3>
+
+<!-- Github Followers & Stars -->
+![GitHub stars](https://img.shields.io/github/stars/dipangshudhar/dipangshudhar?label=Profile%20Repo%20Stars&style=for-the-badge)
+
+![GitHub followers](https://img.shields.io/github/followers/dipangshudhar?label=Followers&style=for-the-badge)
+
+🥲
+
+<h3>🔹 Streak 🔹</h3>
 
 <!-- GitHub Streak -->
 ![GitHub streak](https://github-readme-streak-stats.herokuapp.com/?user=dipangshudhar&theme=radical)
-
-<!-- Top Languages -->
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dipangshudhar&layout=compact&theme=radical)
-
 </div>
-
+<h3 align="center"> 💬 Discord 💬 </h3>
 <p align="center">
   <img src="https://lanyard.cnrad.dev/api/1389405866226356385?theme=dark&bg=000000&borderRadius=25px&idleMessage=Probably%20coding..." />
 </p>
