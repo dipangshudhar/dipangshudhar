@@ -24,4 +24,8 @@ Keeping my workflow ultra-minimal, ultra-fast</p>
 <h3 align="center">❔ What I enjoy ❓</h3>
 <p align="center">Coding,Gaming,Debugging systems at 3 AM for no reason & Breaking environments just to fix them cleaner</p>  
 
+<p align="center">
+  <img src="https://lanyard.cnrad.dev/api/1389405866226356385?theme=dark&bg=000000&borderRadius=25px&idleMessage=Probably%20coding..." />
+</p>
+
 <p align="center">....BTW • If you're into clean code, automation, or high-performance workflows — we’re already aligned....</p>
